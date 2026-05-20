@@ -3,6 +3,10 @@ id: "04-01"
 category: measurement-framework
 category_title: Measurement framework
 title: Retention, activation, Day-7 and Day-30 targets are set before users arrive
+description: >
+  Founders who set targets before launch can tell the difference between early
+  traction and product-market fit. Those who chose metrics after launch end up
+  measuring what worked instead of surfacing what didn't.
 source:
   id: founders-playbook-2026-05
   section: "Ch.4 MVP Stage — Build your measurement framework before launch"

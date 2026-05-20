@@ -149,7 +149,8 @@ a:hover { text-decoration-color: var(--fg); }
 
 .item-body { padding: 18px 22px; }
 .item-id { font-family: var(--font-mono); font-size: 11px; color: var(--fg-faint); margin: 0 0 6px; }
-.item-title { font-family: var(--font-sans); font-weight: 500; font-size: 17px; line-height: 1.4; margin: 0 0 16px; letter-spacing: -0.005em; }
+.item-title { font-family: var(--font-sans); font-weight: 500; font-size: 17px; line-height: 1.4; margin: 0 0 8px; letter-spacing: -0.005em; }
+.item-desc { font-size: 14px; line-height: 1.6; color: var(--fg-muted); margin: 0 0 16px; max-width: 64ch; }
 
 .scores { display: flex; gap: 8px; flex-wrap: wrap; }
 .score-btn {

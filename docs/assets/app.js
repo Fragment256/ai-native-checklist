@@ -77,6 +77,7 @@ function itemEl(item) {
     <div class="item-body">
       <p class="item-id">${item.id} · ${item.category_title || ""}</p>
       <h3 class="item-title">${item.title}</h3>
+      ${item.description ? `<p class="item-desc">${item.description}</p>` : ""}
       <div class="scores" role="group" aria-label="Score this item">
         ${SCORES.map(s => `
           <button class="score-btn" data-val="${s}" aria-pressed="${scores[item.id] === s}">${s.charAt(0).toUpperCase() + s.slice(1)}</button>

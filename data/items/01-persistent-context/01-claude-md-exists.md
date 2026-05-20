@@ -3,6 +3,11 @@ id: "01-01"
 category: persistent-context
 category_title: Persistent context
 title: A CLAUDE.md (or equivalent) exists for every active codebase
+description: >
+  AI coding agents lose all context when a session ends unless you give them a
+  persistent document to start from. CLAUDE.md is that document — it defines
+  the architecture, conventions, and decisions so every session starts informed
+  rather than blank.
 source:
   id: founders-playbook-2026-05
   section: "Ch.4 MVP Stage — Define your architecture before you build"

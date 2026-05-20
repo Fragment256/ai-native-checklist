@@ -3,6 +3,10 @@ id: "06-01"
 category: security-baseline
 category_title: Security baseline
 title: A security review was completed before real users touched the product
+description: >
+  A security review before any user arrives is the minimum responsible bar for
+  an MVP. It covers auth, data exposure, input validation, and dependency
+  vulnerabilities — anything touching user data or access control.
 source:
   id: founders-playbook-2026-05
   section: "Ch.4 MVP Stage — Insecure by inexperience / Security review before any user touches it"

@@ -3,6 +3,10 @@ id: "02-01"
 category: surfaces
 category_title: Surfaces matched to jobs
 title: The founder knows which Claude surface to reach for, by reflex, for recurring tasks
+description: >
+  Chat, Cowork, and Code are not interchangeable. Chat is for quick questions,
+  Cowork connects to live systems for knowledge work, and Code ships software.
+  Using the wrong surface for the job costs time and produces weaker output.
 source:
   id: founders-playbook-2026-05
   section: "Ch.3 Idea Stage — Chat, Claude Cowork, or Claude Code: choosing the right Claude surface"

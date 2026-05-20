@@ -3,6 +3,10 @@ id: "03-01"
 category: validation-discipline
 category_title: Validation discipline
 title: The problem hypothesis is written as a testable statement
+description: >
+  "People struggle with X" is an observation, not a hypothesis. A testable
+  hypothesis names a specific user, a specific situation, and a specific
+  severity — something you can confirm or reject by talking to ten people.
 source:
   id: founders-playbook-2026-05
   section: "Ch.3 Idea Stage — Defining and pressure-testing the problem hypothesis"

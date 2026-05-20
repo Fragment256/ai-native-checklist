@@ -3,6 +3,10 @@ id: "07-01"
 category: operational-layer
 category_title: Operational layer
 title: A bottleneck map exists of every workflow, decision, and approval routed through the founder
+description: >
+  Every decision routed through the founder is a bottleneck. A bottleneck map
+  makes the list visible: which workflows stall if you're unavailable for a
+  week, and which can be automated, delegated, or handed off.
 source:
   id: founders-playbook-2026-05
   section: "Ch.6 Scale Stage — Handing off day-to-day tasks to Claude Cowork"
