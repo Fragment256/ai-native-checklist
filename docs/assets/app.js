@@ -82,14 +82,13 @@ function itemEl(item) {
           <button class="score-btn" data-val="${s}" aria-pressed="${scores[item.id] === s}">${s.charAt(0).toUpperCase() + s.slice(1)}</button>
         `).join("")}
       </div>
-      <span class="expand" role="button" tabindex="0">Source and how to score</span>
+      <span class="expand" role="button" tabindex="0">Source</span>
       <div class="details">
         <div class="source-block">
           <p class="source-label">SOURCE</p>
           <p class="source-quote">"${src.quote || ""}"</p>
           <p class="source-attr"><a href="${sourceUrl}" target="_blank" rel="noopener">${sourceTitle}</a> · ${src.section || ""}${pageBit}</p>
         </div>
-        <div class="howto">${mdToHtml(item.body || "")}</div>
       </div>
     </div>
   `;
