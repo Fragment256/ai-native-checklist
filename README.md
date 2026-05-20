@@ -1,44 +1,30 @@
-# AI-Native Checklist
+# AI-Native Readiness Checklist
 
-A source-linked checklist for AI-native startup practice. Every item is grounded in a quoted, citable passage from a practitioner authority. No paraphrasing, no LLM-synthesised claims, no opinion presented as fact.
+A checklist for AI-native startup readiness. Run through it, score your team yes / partial / no on each item, share the link.
 
 **Live site:** https://fragment256.github.io/ai-native-checklist/
 
 ## What it is
 
-A community-maintainable assessment that asks: *is your startup operating AI-natively?* The output is a yes / partial / no score across eight categories, with every claim traceable to its source.
+Eight practices, each grounded in a quoted passage from a published practitioner playbook. Score yourself across all of them, then send the share link to your co-founder or team.
 
-It is deliberately not:
+The state of your scores is preserved in the URL, so the share link reflects exactly what you scored.
 
-- A scan of your codebase. (Other tools do that — see [Related work](#related-work).)
-- A vendor checklist. We are not selling AI.
-- A maturity model in the enterprise sense. The framing is founder / small-team practice.
+## Sources
 
-## How to use it
+Every item quotes one of the sources below. Quotes are verbatim, with section and page where available, and the source artefacts are archived in [`data/sources/`](./data/sources/) for verification.
 
-1. Open the [live site](https://fragment256.github.io/ai-native-checklist/).
-2. Walk through each item. Score Yes / Partial / No.
-3. The score is preserved in the URL — share that URL with a co-founder, advisor, or investor and they see the exact same state.
+- **The Founder's Playbook: Building an AI-Native Startup** — Anthropic, 14 May 2026. [claude.com](https://claude.com/blog/the-founders-playbook) · [archived PDF](./data/sources/founders-playbook-2026-05.pdf)
 
-## Methodology
+To propose a new source, see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-Every claim must be grounded in a quoted passage from an authoritative source. See [METHODOLOGY.md](./METHODOLOGY.md) for the source-inclusion criteria, scoring rubric, and refresh cadence.
+## Related tools
 
-## Sources at v0
-
-- *The Founder's Playbook: Building an AI-Native Startup*, Anthropic, May 2026.
-
-Future sources will be added under [`data/sources/`](./data/sources/) as siblings. See [CONTRIBUTING.md](./CONTRIBUTING.md) to propose one.
-
-## Related work
-
-This checklist assesses **founder and operating practice**. For complementary tools that assess **codebase AI-readiness**, see:
+This checklist assesses **founder and operating practice**. For tools that assess **codebase AI-readiness**, see:
 
 - [kodustech/agent-readiness](https://github.com/kodustech/agent-readiness)
 - [getaiready/aiready-cli](https://github.com/caopengau/aiready-cli)
 - [f/check-ai](https://github.com/f/check-ai)
-
-These are different layers of the same stack and we recommend running both.
 
 ## Maintainer
 
@@ -46,5 +32,5 @@ Curated by [Fragment256](https://fragment256.com). Issues and pull requests welc
 
 ## License
 
-- Content (checklist items, methodology, sources): [CC-BY 4.0](./LICENSE-CONTENT)
-- Site code and build scripts: [MIT](./LICENSE)
+- Content: [CC-BY 4.0](./LICENSE-CONTENT)
+- Site code: [MIT](./LICENSE)

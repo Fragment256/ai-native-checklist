@@ -1,4 +1,4 @@
-// AI-Native Checklist — renders data.json, manages scores, encodes state in URL hash.
+// AI-Native Readiness Checklist — renders data.json, manages scores, encodes state in URL hash.
 
 const SCORES = ["yes", "partial", "no"];
 
@@ -33,12 +33,27 @@ function tally() {
     const s = scores[it.id];
     if (s && t[s] !== undefined) t[s]++; else t.unscored++;
   }
+  t.scored = t.yes + t.partial + t.no;
   return t;
 }
 
-function renderTally() {
+function renderScoreboard() {
   const t = tally();
-  document.getElementById("tally").innerHTML = `
+  document.getElementById("score-scored").textContent = t.scored;
+  document.getElementById("score-total").textContent = t.total;
+
+  const bar = document.getElementById("score-bar");
+  bar.innerHTML = "";
+  data.items.forEach((it) => {
+    const cell = document.createElement("div");
+    cell.className = "cell";
+    const s = scores[it.id];
+    if (s) cell.classList.add(s);
+    cell.title = `${it.id}: ${s || "unscored"}`;
+    bar.appendChild(cell);
+  });
+
+  document.getElementById("breakdown").innerHTML = `
     <span><span class="dot yes"></span><span class="count">${t.yes}</span> yes</span>
     <span><span class="dot partial"></span><span class="count">${t.partial}</span> partial</span>
     <span><span class="dot no"></span><span class="count">${t.no}</span> no</span>
@@ -64,15 +79,15 @@ function itemEl(item) {
       <h3 class="item-title">${item.title}</h3>
       <div class="scores" role="group" aria-label="Score this item">
         ${SCORES.map(s => `
-          <button class="score-btn" data-val="${s}" aria-pressed="${scores[item.id] === s}">${s}</button>
+          <button class="score-btn" data-val="${s}" aria-pressed="${scores[item.id] === s}">${s.charAt(0).toUpperCase() + s.slice(1)}</button>
         `).join("")}
       </div>
-      <span class="expand" role="button" tabindex="0">source &amp; how to score</span>
+      <span class="expand" role="button" tabindex="0">Source and how to score</span>
       <div class="details">
         <div class="source-block">
-          <p class="source-label">source</p>
+          <p class="source-label">SOURCE</p>
           <p class="source-quote">"${src.quote || ""}"</p>
-          <p class="source-attr">— <a href="${sourceUrl}" target="_blank" rel="noopener">${sourceTitle}</a>, ${src.section || ""}${pageBit}</p>
+          <p class="source-attr"><a href="${sourceUrl}" target="_blank" rel="noopener">${sourceTitle}</a> · ${src.section || ""}${pageBit}</p>
         </div>
         <div class="howto">${mdToHtml(item.body || "")}</div>
       </div>
@@ -93,7 +108,7 @@ function itemEl(item) {
         b.setAttribute("aria-pressed", scores[item.id] === b.dataset.val ? "true" : "false");
       });
       writeToHash();
-      renderTally();
+      renderScoreboard();
     });
   });
 
@@ -108,7 +123,6 @@ function itemEl(item) {
 }
 
 function mdToHtml(md) {
-  // Minimal MD → HTML for item bodies. Headings, bold, lists.
   const lines = md.split("\n");
   const out = [];
   let inList = false;
@@ -156,7 +170,7 @@ function renderChecklist() {
     items.forEach(it => section.appendChild(itemEl(it)));
     root.appendChild(section);
   });
-  renderTally();
+  renderScoreboard();
 }
 
 function setupShare() {
@@ -166,9 +180,9 @@ function setupShare() {
     const url = window.location.href;
     try {
       await navigator.clipboard.writeText(url);
-      btn.textContent = "copied";
+      btn.textContent = "Copied";
       btn.classList.add("copied");
-      setTimeout(() => { btn.textContent = "copy share link"; btn.classList.remove("copied"); }, 1600);
+      setTimeout(() => { btn.textContent = "Copy share link"; btn.classList.remove("copied"); }, 1600);
     } catch (e) {
       window.prompt("Copy this link:", url);
     }
