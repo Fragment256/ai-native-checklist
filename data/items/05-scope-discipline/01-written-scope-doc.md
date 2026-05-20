@@ -2,6 +2,11 @@
 id: "05-01"
 category: scope-discipline
 category_title: Scope discipline
+category_description: >
+  AI dramatically lowers the cost of building. Scope discipline is the
+  compensating habit: a written commitment to what the product does not do, and
+  the evidence threshold required before that changes. Without it, the low cost
+  of building becomes the reason the product never focuses.
 title: A written scope document defines what the product does AND what it deliberately does not do
 description: >
   AI makes it easy to keep building. The antidote is a written scope document

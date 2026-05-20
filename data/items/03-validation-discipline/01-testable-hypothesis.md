@@ -2,6 +2,10 @@
 id: "03-01"
 category: validation-discipline
 category_title: Validation discipline
+category_description: >
+  The most expensive mistake a startup can make is building against an
+  observation instead of a hypothesis. The Playbook treats a written, testable
+  problem statement as the prerequisite for entering the build stage at all.
 title: The problem hypothesis is written as a testable statement
 description: >
   "People struggle with X" is an observation, not a hypothesis. A testable

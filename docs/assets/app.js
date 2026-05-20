@@ -71,11 +71,11 @@ function itemEl(item) {
   const sourceTitle = sourceMeta.title || src.id;
   const sourceUrl = sourceMeta.url || "#";
   const pageBit = src.page ? `, p.${src.page}` : "";
+  const sectionBit = src.section ? `${src.section}${pageBit}` : "";
 
   div.innerHTML = `
     <div class="item-bar"></div>
     <div class="item-body">
-      <p class="item-id">${item.id} · ${item.category_title || ""}</p>
       <h3 class="item-title">${item.title}</h3>
       ${item.description ? `<p class="item-desc">${item.description}</p>` : ""}
       <div class="scores" role="group" aria-label="Score this item">
@@ -83,14 +83,11 @@ function itemEl(item) {
           <button class="score-btn" data-val="${s}" aria-pressed="${scores[item.id] === s}">${s.charAt(0).toUpperCase() + s.slice(1)}</button>
         `).join("")}
       </div>
-      <span class="expand" role="button" tabindex="0">Source</span>
-      <div class="details">
-        <div class="source-block">
-          <p class="source-label">SOURCE</p>
-          <p class="source-quote">"${src.quote || ""}"</p>
-          <p class="source-attr"><a href="${sourceUrl}" target="_blank" rel="noopener">${sourceTitle}</a> · ${src.section || ""}${pageBit}</p>
-        </div>
-      </div>
+      ${src.quote ? `
+      <blockquote class="item-quote">
+        <p>${src.quote}</p>
+        <cite><a href="${sourceUrl}" target="_blank" rel="noopener">${sourceTitle}</a>${sectionBit ? ` · ${sectionBit}` : ""}</cite>
+      </blockquote>` : ""}
     </div>
   `;
 
@@ -110,13 +107,6 @@ function itemEl(item) {
       writeToHash();
       renderScoreboard();
     });
-  });
-
-  const expand = div.querySelector(".expand");
-  const toggle = () => div.classList.toggle("open");
-  expand.addEventListener("click", toggle);
-  expand.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
   });
 
   return div;
@@ -166,6 +156,7 @@ function renderChecklist() {
         <span class="category-num">${num}</span>
         <h2 class="category-title">${cat.title}</h2>
       </div>
+      ${cat.description ? `<p class="category-desc">${cat.description}</p>` : ""}
     `;
     items.forEach(it => section.appendChild(itemEl(it)));
     root.appendChild(section);

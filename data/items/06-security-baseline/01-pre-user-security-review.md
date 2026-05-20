@@ -2,6 +2,11 @@
 id: "06-01"
 category: security-baseline
 category_title: Security baseline
+category_description: >
+  AI-assisted development ships code faster than traditional review cycles catch
+  vulnerabilities. The Playbook calls a security review before any real user
+  touches the product the minimum responsible threshold for an MVP — covering
+  auth, data exposure, input validation, and known dependency vulnerabilities.
 title: A security review was completed before real users touched the product
 description: >
   A security review before any user arrives is the minimum responsible bar for

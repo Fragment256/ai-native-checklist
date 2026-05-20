@@ -2,6 +2,11 @@
 id: "01-01"
 category: persistent-context
 category_title: Persistent context
+category_description: >
+  AI agents have no memory between sessions. Without a persistent context
+  document, every session starts from scratch — rebuilding understanding of your
+  architecture, conventions, and open decisions. This is the practice that makes
+  everything else compoundable.
 title: A CLAUDE.md (or equivalent) exists for every active codebase
 description: >
   AI coding agents lose all context when a session ends unless you give them a

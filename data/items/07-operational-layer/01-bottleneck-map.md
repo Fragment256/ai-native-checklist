@@ -2,6 +2,11 @@
 id: "07-01"
 category: operational-layer
 category_title: Operational layer
+category_description: >
+  Growth stalls when the founder is the bottleneck on too many workflows. The
+  Playbook recommends mapping every decision, approval, and workflow currently
+  routed through the founder — then asking what stalls if they are unavailable
+  for a week. That list is the operational ceiling.
 title: A bottleneck map exists of every workflow, decision, and approval routed through the founder
 description: >
   Every decision routed through the founder is a bottleneck. A bottleneck map

@@ -83,7 +83,7 @@ const seen = new Set();
 for (const it of items) {
   if (!seen.has(it.category)) {
     seen.add(it.category);
-    categories.push({ id: it.category, title: it.category_title || it.category });
+    categories.push({ id: it.category, title: it.category_title || it.category, description: it.category_description || null });
   }
 }
 

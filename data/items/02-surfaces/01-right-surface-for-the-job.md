@@ -2,6 +2,11 @@
 id: "02-01"
 category: surfaces
 category_title: Surfaces matched to jobs
+category_description: >
+  Anthropic ships three distinct products: Chat for conversational work, Cowork
+  for connected knowledge work, and Code for shipping software. The Playbook
+  treats surface selection as a foundational operating habit — using the wrong
+  one for the job produces slower, weaker output.
 title: The founder knows which Claude surface to reach for, by reflex, for recurring tasks
 description: >
   Chat, Cowork, and Code are not interchangeable. Chat is for quick questions,

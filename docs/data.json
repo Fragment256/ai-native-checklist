@@ -1,38 +1,46 @@
 {
   "version": "0.1.0",
-  "generated": "2026-05-20T15:32:46.703Z",
+  "generated": "2026-05-20T15:40:05.710Z",
   "categories": [
     {
       "id": "persistent-context",
-      "title": "Persistent context"
+      "title": "Persistent context",
+      "description": "AI agents have no memory between sessions. Without a persistent context document, every session starts from scratch — rebuilding understanding of your architecture, conventions, and open decisions. This is the practice that makes everything else compoundable."
     },
     {
       "id": "surfaces",
-      "title": "Surfaces matched to jobs"
+      "title": "Surfaces matched to jobs",
+      "description": "Anthropic ships three distinct products: Chat for conversational work, Cowork for connected knowledge work, and Code for shipping software. The Playbook treats surface selection as a foundational operating habit — using the wrong one for the job produces slower, weaker output."
     },
     {
       "id": "validation-discipline",
-      "title": "Validation discipline"
+      "title": "Validation discipline",
+      "description": "The most expensive mistake a startup can make is building against an observation instead of a hypothesis. The Playbook treats a written, testable problem statement as the prerequisite for entering the build stage at all."
     },
     {
       "id": "measurement-framework",
-      "title": "Measurement framework"
+      "title": "Measurement framework",
+      "description": "Founders who mistake early traction for product-market fit are, the Playbook argues, almost always those who set their metrics after launch. Pre-committing to retention, activation, and Day-7/Day-30 targets before users arrive changes what the data can tell you."
     },
     {
       "id": "scope-discipline",
-      "title": "Scope discipline"
+      "title": "Scope discipline",
+      "description": "AI dramatically lowers the cost of building. Scope discipline is the compensating habit: a written commitment to what the product does not do, and the evidence threshold required before that changes. Without it, the low cost of building becomes the reason the product never focuses."
     },
     {
       "id": "security-baseline",
-      "title": "Security baseline"
+      "title": "Security baseline",
+      "description": "AI-assisted development ships code faster than traditional review cycles catch vulnerabilities. The Playbook calls a security review before any real user touches the product the minimum responsible threshold for an MVP — covering auth, data exposure, input validation, and known dependency vulnerabilities."
     },
     {
       "id": "operational-layer",
-      "title": "Operational layer"
+      "title": "Operational layer",
+      "description": "Growth stalls when the founder is the bottleneck on too many workflows. The Playbook recommends mapping every decision, approval, and workflow currently routed through the founder — then asking what stalls if they are unavailable for a week. That list is the operational ceiling."
     },
     {
       "id": "knowledge-codification",
-      "title": "Knowledge codification"
+      "title": "Knowledge codification",
+      "description": "The gap between an AI that does what you tell it and one that does what you mean is how much institutional knowledge you have externalised into context it can use. Industry jargon, edge cases, regulatory gotchas, recurring workflow steps — none of it is available to the AI until it is written down."
     }
   ],
   "items": [
@@ -40,6 +48,7 @@
       "id": "01-01",
       "category": "persistent-context",
       "category_title": "Persistent context",
+      "category_description": "AI agents have no memory between sessions. Without a persistent context document, every session starts from scratch — rebuilding understanding of your architecture, conventions, and open decisions. This is the practice that makes everything else compoundable.",
       "title": "A CLAUDE.md (or equivalent) exists for every active codebase",
       "description": "AI coding agents lose all context when a session ends unless you give them a persistent document to start from. CLAUDE.md is that document — it defines the architecture, conventions, and decisions so every session starts informed rather than blank.",
       "source": {
@@ -54,6 +63,7 @@
       "id": "02-01",
       "category": "surfaces",
       "category_title": "Surfaces matched to jobs",
+      "category_description": "Anthropic ships three distinct products: Chat for conversational work, Cowork for connected knowledge work, and Code for shipping software. The Playbook treats surface selection as a foundational operating habit — using the wrong one for the job produces slower, weaker output.",
       "title": "The founder knows which Claude surface to reach for, by reflex, for recurring tasks",
       "description": "Chat, Cowork, and Code are not interchangeable. Chat is for quick questions, Cowork connects to live systems for knowledge work, and Code ships software. Using the wrong surface for the job costs time and produces weaker output.",
       "source": {
@@ -68,6 +78,7 @@
       "id": "03-01",
       "category": "validation-discipline",
       "category_title": "Validation discipline",
+      "category_description": "The most expensive mistake a startup can make is building against an observation instead of a hypothesis. The Playbook treats a written, testable problem statement as the prerequisite for entering the build stage at all.",
       "title": "The problem hypothesis is written as a testable statement",
       "description": "\"People struggle with X\" is an observation, not a hypothesis. A testable hypothesis names a specific user, a specific situation, and a specific severity — something you can confirm or reject by talking to ten people.",
       "source": {
@@ -82,6 +93,7 @@
       "id": "04-01",
       "category": "measurement-framework",
       "category_title": "Measurement framework",
+      "category_description": "Founders who mistake early traction for product-market fit are, the Playbook argues, almost always those who set their metrics after launch. Pre-committing to retention, activation, and Day-7/Day-30 targets before users arrive changes what the data can tell you.",
       "title": "Retention, activation, Day-7 and Day-30 targets are set before users arrive",
       "description": "Founders who set targets before launch can tell the difference between early traction and product-market fit. Those who chose metrics after launch end up measuring what worked instead of surfacing what didn't.",
       "source": {
@@ -96,6 +108,7 @@
       "id": "05-01",
       "category": "scope-discipline",
       "category_title": "Scope discipline",
+      "category_description": "AI dramatically lowers the cost of building. Scope discipline is the compensating habit: a written commitment to what the product does not do, and the evidence threshold required before that changes. Without it, the low cost of building becomes the reason the product never focuses.",
       "title": "A written scope document defines what the product does AND what it deliberately does not do",
       "description": "AI makes it easy to keep building. The antidote is a written scope document that commits to what the product does not do — and defines the evidence threshold required before anything new is added.",
       "source": {
@@ -110,6 +123,7 @@
       "id": "06-01",
       "category": "security-baseline",
       "category_title": "Security baseline",
+      "category_description": "AI-assisted development ships code faster than traditional review cycles catch vulnerabilities. The Playbook calls a security review before any real user touches the product the minimum responsible threshold for an MVP — covering auth, data exposure, input validation, and known dependency vulnerabilities.",
       "title": "A security review was completed before real users touched the product",
       "description": "A security review before any user arrives is the minimum responsible bar for an MVP. It covers auth, data exposure, input validation, and dependency vulnerabilities — anything touching user data or access control.",
       "source": {
@@ -124,6 +138,7 @@
       "id": "07-01",
       "category": "operational-layer",
       "category_title": "Operational layer",
+      "category_description": "Growth stalls when the founder is the bottleneck on too many workflows. The Playbook recommends mapping every decision, approval, and workflow currently routed through the founder — then asking what stalls if they are unavailable for a week. That list is the operational ceiling.",
       "title": "A bottleneck map exists of every workflow, decision, and approval routed through the founder",
       "description": "Every decision routed through the founder is a bottleneck. A bottleneck map makes the list visible: which workflows stall if you're unavailable for a week, and which can be automated, delegated, or handed off.",
       "source": {
@@ -138,6 +153,7 @@
       "id": "08-01",
       "category": "knowledge-codification",
       "category_title": "Knowledge codification",
+      "category_description": "The gap between an AI that does what you tell it and one that does what you mean is how much institutional knowledge you have externalised into context it can use. Industry jargon, edge cases, regulatory gotchas, recurring workflow steps — none of it is available to the AI until it is written down.",
       "title": "Domain expertise is externalised somewhere the AI can use it",
       "description": "The playbook in a founder's head — jargon, edge cases, regulatory gotchas, recurring workflow steps — is invisible to AI until it's written down. Externalising it into AI-readable context turns institutional knowledge into a compounding asset.",
       "source": {

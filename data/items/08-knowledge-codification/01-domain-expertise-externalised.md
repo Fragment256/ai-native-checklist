@@ -2,6 +2,11 @@
 id: "08-01"
 category: knowledge-codification
 category_title: Knowledge codification
+category_description: >
+  The gap between an AI that does what you tell it and one that does what you
+  mean is how much institutional knowledge you have externalised into context it
+  can use. Industry jargon, edge cases, regulatory gotchas, recurring workflow
+  steps — none of it is available to the AI until it is written down.
 title: Domain expertise is externalised somewhere the AI can use it
 description: >
   The playbook in a founder's head — jargon, edge cases, regulatory gotchas,

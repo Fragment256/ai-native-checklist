@@ -2,6 +2,11 @@
 id: "04-01"
 category: measurement-framework
 category_title: Measurement framework
+category_description: >
+  Founders who mistake early traction for product-market fit are, the Playbook
+  argues, almost always those who set their metrics after launch. Pre-committing
+  to retention, activation, and Day-7/Day-30 targets before users arrive changes
+  what the data can tell you.
 title: Retention, activation, Day-7 and Day-30 targets are set before users arrive
 description: >
   Founders who set targets before launch can tell the difference between early
