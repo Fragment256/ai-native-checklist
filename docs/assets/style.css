@@ -133,9 +133,10 @@ a:hover { text-decoration-color: var(--fg); }
   color: oklch(0.72 0.17 48);
 }
 .anthropic-mark {
-  width: 28px;
-  height: 28px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
+  display: block;
 }
 .source-band-company {
   font-family: var(--font-sans);
