@@ -6,7 +6,7 @@ const path = require("path");
 
 const ROOT = path.join(__dirname, "data", "items");
 const SOURCES_DIR = path.join(__dirname, "data", "sources");
-const OUT = path.join(__dirname, "site", "data.json");
+const OUT = path.join(__dirname, "docs", "data.json");
 
 function parseFrontmatter(text) {
   const m = text.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
