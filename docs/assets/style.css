@@ -286,8 +286,6 @@ a:hover { text-decoration-color: var(--fg); }
   .hero h1 { font-size: 28px; margin: 0 0 12px; }
   .hero p.lede { font-size: 15px; margin: 0; }
   .source-band-inner { padding: 12px 20px; }
-  .source-band-title { display: none; }
-  .source-band-sep { display: none; }
   .scoreboard-inner { padding: 12px 20px; gap: 12px; }
   .score-block { flex-direction: row; align-items: center; gap: 8px; }
   .score-num { font-size: 20px; }
