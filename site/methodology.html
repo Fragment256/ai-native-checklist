@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology · AI-Native Checklist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="./" class="brand">ai-native-checklist</a>
+    <nav class="nav">
+      <a href="./">checklist</a>
+      <a href="./methodology.html" class="active">methodology</a>
+      <a href="./sources.html">sources</a>
+      <a href="https://github.com/Fragment256/ai-native-checklist" target="_blank" rel="noopener">github</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+  <h1>Methodology</h1>
+  <p>This page is the load-bearing differentiator of the checklist. The rules below are public commitments. Items that violate them do not ship.</p>
+
+  <h2>Core rules</h2>
+  <p><strong>No item without a source.</strong> Every checklist item is grounded in a specific, citable passage from a published authority. If we cannot cite, the item does not go in.</p>
+  <p><strong>Quotes verbatim, in the source's voice.</strong> Items do not paraphrase the source into Fragment256's framing. The quote shows up exactly as the source wrote it, with location (chapter, section, page where available).</p>
+  <p><strong>Sources are versioned and committed.</strong> Every source is archived in the repo so the citation can be verified against the artefact, not against a URL that may change.</p>
+  <p><strong>Source disagreement is surfaced, not silently resolved.</strong> When two authorities give different guidance on the same item, both are shown. The reader chooses.</p>
+  <p><strong>Fragment256 additions are explicitly tagged.</strong> Items added from operational experience rather than from a source are marked <code>fragment256-addition</code> and stay that way until a citable source corroborates them.</p>
+
+  <h2>Source inclusion criteria</h2>
+  <p>A source is eligible if it meets all of:</p>
+  <ul>
+    <li><strong>Practitioner authority.</strong> The author has shipped what they are writing about, or works at an organisation that does. Pure analyst reports are not eligible.</li>
+    <li><strong>Public and stable.</strong> Linkable, archivable, and not behind paywalls that block verification.</li>
+    <li><strong>Specific to AI-native operating practice.</strong> Generic AI strategy material is out of scope.</li>
+  </ul>
+
+  <h2>Scoring rubric</h2>
+  <ul>
+    <li><strong>Yes</strong> — the practice is in place and durable. It would survive someone leaving, the team growing, or three months passing.</li>
+    <li><strong>Partial</strong> — the practice exists but isn't durable. It lives in someone's head, in a chat message, or it isn't updated.</li>
+    <li><strong>No</strong> — the practice is absent.</li>
+  </ul>
+  <p>"Yes" is a high bar on purpose. Partial is honest; Partial is the most common starting score.</p>
+
+  <h2>Refresh cadence</h2>
+  <ul>
+    <li><strong>Per-source review:</strong> when a cited source publishes a meaningful update, the relevant items are re-verified within 30 days.</li>
+    <li><strong>Full review:</strong> quarterly. The whole checklist is walked end-to-end against current sources.</li>
+    <li><strong>Versioning:</strong> the checklist itself is versioned (SemVer-ish). Breaking changes to item ids or scoring rules bump major.</li>
+  </ul>
+
+  <h2>What this checklist deliberately does not do</h2>
+  <ul>
+    <li>Tell you what tools to buy.</li>
+    <li>Score your codebase. (See related work in the repo README.)</li>
+    <li>Replace judgement.</li>
+  </ul>
+
+  <p>Disagree with anything here? Open an issue with the proposed change and the source. See <a href="https://github.com/Fragment256/ai-native-checklist/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>.</p>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>curated by <a href="https://fragment256.com" target="_blank" rel="noopener">fragment256</a> · cc-by 4.0</span>
+    <span><a href="https://github.com/Fragment256/ai-native-checklist" target="_blank" rel="noopener">contribute on github</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

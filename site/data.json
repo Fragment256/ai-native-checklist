@@ -1,0 +1,157 @@
+{
+  "version": "0.1.0",
+  "generated": "2026-05-20T12:58:13.861Z",
+  "categories": [
+    {
+      "id": "persistent-context",
+      "title": "Persistent context"
+    },
+    {
+      "id": "surfaces",
+      "title": "Surfaces matched to jobs"
+    },
+    {
+      "id": "validation-discipline",
+      "title": "Validation discipline"
+    },
+    {
+      "id": "measurement-framework",
+      "title": "Measurement framework"
+    },
+    {
+      "id": "scope-discipline",
+      "title": "Scope discipline"
+    },
+    {
+      "id": "security-baseline",
+      "title": "Security baseline"
+    },
+    {
+      "id": "operational-layer",
+      "title": "Operational layer"
+    },
+    {
+      "id": "knowledge-codification",
+      "title": "Knowledge codification"
+    }
+  ],
+  "items": [
+    {
+      "id": "01-01",
+      "category": "persistent-context",
+      "category_title": "Persistent context",
+      "title": "A CLAUDE.md (or equivalent) exists for every active codebase",
+      "source": {
+        "id": "founders-playbook-2026-05",
+        "section": "Ch.4 MVP Stage — Define your architecture before you build",
+        "page": 18,
+        "quote": "Save this output as CLAUDE.md markdown file(s). This is your architectural context document: the first artifact of your build, and the one every subsequent session depends on. Functionally, they are persistent \"memory\" for your project."
+      },
+      "body": "## How to score\n\n- **Yes** — every active codebase in the company has a current, maintained CLAUDE.md (or equivalent persistent-context file) that the AI reads on every session.\n- **Partial** — one exists somewhere, but it is out of date, missing for some codebases, or never updated end-of-session.\n- **No** — no equivalent persistent-context document exists. Each Claude Code session starts from scratch."
+    },
+    {
+      "id": "02-01",
+      "category": "surfaces",
+      "category_title": "Surfaces matched to jobs",
+      "title": "The founder knows which Claude surface to reach for, by reflex, for recurring tasks",
+      "source": {
+        "id": "founders-playbook-2026-05",
+        "section": "Ch.3 Idea Stage — Chat, Claude Cowork, or Claude Code: choosing the right Claude surface",
+        "page": 11,
+        "quote": "AI makes it easier for startup founders to ship faster, automate tedious workflows, and operate at scale, but the surface you use matters. Here's when to use Chat, Claude Cowork, or Claude Code depending on the task at hand."
+      },
+      "body": "## How to score\n\n- **Yes** — the founder can name, for at least three recurring tasks, which surface they use and why. Chat for quick exchanges, Cowork for connected-systems knowledge work, Code for shipping software.\n- **Partial** — one surface is used for everything regardless of fit. Or surface choice is ad hoc rather than deliberate.\n- **No** — only one surface is in use, or the distinction has not been considered."
+    },
+    {
+      "id": "03-01",
+      "category": "validation-discipline",
+      "category_title": "Validation discipline",
+      "title": "The problem hypothesis is written as a testable statement",
+      "source": {
+        "id": "founders-playbook-2026-05",
+        "section": "Ch.3 Idea Stage — Defining and pressure-testing the problem hypothesis",
+        "page": 11,
+        "quote": "Work with Claude to sharpen your problem statement until it's a testable hypothesis. For example, \"Contract review takes too long\" is not meaningfully testable. But \"In-house legal teams at mid-market companies spend 3+ days per contract review cycle because redlines are managed across email threads rather than a single version-controlled document\" is very testable."
+      },
+      "body": "## How to score\n\n- **Yes** — the problem hypothesis is written down, names a specific user with a specific situation, specifies a frequency or severity, and could be confirmed or disconfirmed by talking to ten of those users.\n- **Partial** — a hypothesis exists but is generic, lives in someone's head, or has not been stress-tested against disconfirming evidence.\n- **No** — the team is building against an observation (\"people struggle with X\"), not a hypothesis."
+    },
+    {
+      "id": "04-01",
+      "category": "measurement-framework",
+      "category_title": "Measurement framework",
+      "title": "Retention, activation, Day-7 and Day-30 targets are set before users arrive",
+      "source": {
+        "id": "founders-playbook-2026-05",
+        "section": "Ch.4 MVP Stage — Build your measurement framework before launch",
+        "page": 19,
+        "quote": "The founders who mis-identify early traction as product-market fit are typically the same ones who started tracking data after launch, using metrics chosen to assess what was working rather than to surface what wasn't. The antidote is to establish your measurement framework before the first user shows up. […] Set your retention benchmarks, your activation criteria, and your Day 7 and Day 30 targets before releasing your MVP."
+      },
+      "body": "## How to score\n\n- **Yes** — retention, activation, and Day-7 / Day-30 targets are written down before launch, alongside a definition of what a \"false positive\" looks like for this product.\n- **Partial** — some metrics are tracked but the targets and false-positive definition were not pre-committed.\n- **No** — metrics were chosen after launch, or no targets exist."
+    },
+    {
+      "id": "05-01",
+      "category": "scope-discipline",
+      "category_title": "Scope discipline",
+      "title": "A written scope document defines what the product does AND what it deliberately does not do",
+      "source": {
+        "id": "founders-playbook-2026-05",
+        "section": "Ch.4 MVP Stage — Zero-friction scope creep",
+        "page": 17,
+        "quote": "The antidote is a written scope definition created before building begins, describing what the product does, what it deliberately does not do, and the specific evidence from real users that would justify adding something new. This moves the decision point from \"should we build this?\" to \"a critical mass of users have told us they can't get value from the product without this?\""
+      },
+      "body": "## How to score\n\n- **Yes** — a scope document exists in the repo. It names what is in scope, what is explicitly out of scope, and the evidence threshold required to add a new feature.\n- **Partial** — scope is roughly understood but not written down, or the \"deliberately not\" list is missing.\n- **No** — no scope document exists. New features are added on enthusiasm."
+    },
+    {
+      "id": "06-01",
+      "category": "security-baseline",
+      "category_title": "Security baseline",
+      "title": "A security review was completed before real users touched the product",
+      "source": {
+        "id": "founders-playbook-2026-05",
+        "section": "Ch.4 MVP Stage — Insecure by inexperience / Security review before any user touches it",
+        "page": 17,
+        "quote": "A security review before any user touches your app or solution is the minimum responsible threshold for releasing a minimum viable product into the world. […] Run your core application code through Claude with a specific brief: review for authentication and session handling, data exposure in API responses, input validation and injection risks, and dependencies with known vulnerabilities."
+      },
+      "body": "## How to score\n\n- **Yes** — a security review covering auth, data exposure, input validation, and dependency vulnerabilities was completed before the first real user touched the product. Findings touching auth, secrets, or data handling had human review (not AI-only).\n- **Partial** — some review happened but coverage was incomplete or only AI-reviewed.\n- **No** — the product shipped to real users without a security pass."
+    },
+    {
+      "id": "07-01",
+      "category": "operational-layer",
+      "category_title": "Operational layer",
+      "title": "A bottleneck map exists of every workflow, decision, and approval routed through the founder",
+      "source": {
+        "id": "founders-playbook-2026-05",
+        "section": "Ch.6 Scale Stage — Handing off day-to-day tasks to Claude Cowork",
+        "page": 28,
+        "quote": "Use Claude to produce a bottleneck map of your current operational layer: every workflow, decision, and approval currently routed through you. Now, ask Claude to extrapolate what happens to each one when you're unavailable for a week. The workflows that stall are the ones where you are still hands-on enough to derail progress."
+      },
+      "body": "## How to score\n\n- **Yes** — a current bottleneck map exists. Each item is categorised: automate / delegate / founder-only. At least one workflow has been moved off the founder's desk as a result.\n- **Partial** — a list exists but isn't categorised, or nothing has been acted on since it was drawn.\n- **No** — the founder cannot name what would stall if they were unavailable for a week."
+    },
+    {
+      "id": "08-01",
+      "category": "knowledge-codification",
+      "category_title": "Knowledge codification",
+      "title": "Domain expertise is externalised somewhere the AI can use it",
+      "source": {
+        "id": "founders-playbook-2026-05",
+        "section": "Ch.6 Scale Stage — Turning domain expertise and institutional knowledge into AI context",
+        "page": 29,
+        "quote": "Through extended conversations, projects, and memory, a founder can share everything they know—industry jargon, regulatory gotchas, edge cases, frustrations, reasons why the obvious answers to this problem don't work—into a structured, searchable context. Skills can then codify recurring workflows into reusable routines Claude runs the same way every time."
+      },
+      "body": "## How to score\n\n- **Yes** — domain expertise (jargon, regulatory gotchas, edge cases, recurring workflow steps) is captured in a structured, AI-readable form. At least one workflow has been turned into a reusable skill that runs the same way every time.\n- **Partial** — some knowledge has been captured but it is partial, stale, or not in a form the AI can act on.\n- **No** — institutional knowledge lives only in the founder's head and undocumented workflows."
+    }
+  ],
+  "sources": {
+    "founders-playbook-2026-05": {
+      "id": "founders-playbook-2026-05",
+      "title": "The Founder's Playbook: Building an AI-Native Startup",
+      "publisher": "Anthropic",
+      "authors": "Anthropic",
+      "published": "2026-05-14",
+      "url": "https://claude.com/blog/the-founders-playbook",
+      "pdf": "./founders-playbook-2026-05.pdf",
+      "text": "./founders-playbook-2026-05.txt",
+      "license": "© Anthropic 2026 — quoted under fair use for citation and commentary"
+    }
+  }
+}
